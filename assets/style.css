@@ -1,20 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Qwitcher+Grypen&family=Sacramento&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    text-decoration: none;
-    list-style-type: none;
-}
 
-body{
-    background-image: url(/assets/fondoChocolates2.jpg);
+    :root{
+        --gradiente: rgb(71, 50, 50), rgba(209, 151, 151, 0.781); 
+        --chocoGrad: rgba(105, 16, 16, 0.473), rgba(209, 151, 151, 0.452); 
+        --chocoLight:  rgb(168, 27, 27);
+        --choscuro: rgb(49, 9, 9);
+        --colCard: rgba(189, 67, 67, 0.473), rgba(209, 23, 23, 0.452);
+        --headFoot: rgba(228, 178, 105, 0.664);
+    }
 
-}
-
-
-
-@media (min-width: 992px) {
 
     *{
         margin: 0;
@@ -25,12 +19,12 @@ body{
     }
 
     body{
-        background-image: url(/assets/fondoChocolates.jpg) ;
+        background-image: url(/assets/imagenes/fondoChocolates.jpg) ;
         background-size: cover;   
     }
 
     header{
-        background-color: rgba(228, 178, 105, 0.664);
+        background-color:var(--headFoot);
         width: 100%;
         display:flex;
         justify-content: space-between;
@@ -73,8 +67,6 @@ body{
 
     }
 
-
-
     .navbar-list a:hover{
         text-shadow:2px 8px 8px rgb(77, 29, 2);
         
@@ -82,7 +74,9 @@ body{
 
     .cajaFlex{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         max-width: 800px 800px;
     }
 
@@ -90,12 +84,21 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: linear-gradient(rgb(71, 50, 50), rgba(209, 151, 151, 0.548));
-        width:1000px;
-        height:700px; 
+        background: linear-gradient(to top, var(--gradiente));
+        width:900px;
+        height: 450px; 
+        border-radius: 1rem;
+        margin-top: 20px;
     }
 
     .marca{
+        background: linear-gradient( to bottom, var(--gradiente));
+        margin-top: 100px;
+        width: 900px;
+        border-radius: 1rem;
+    }
+
+    .marca p{
         color: black;
         margin-top: 0px;
         font-size: 150px;
@@ -129,14 +132,15 @@ body{
 
     .info h1{
         font-size: 48px;
+        font-family: 'Architects Daughter';
         width: 80%;
         min-width: 500px;
         font-weight: 800;
-        color: rgb(124, 29, 29);
+        color: var(--chocoLight)
     }
 
     .info p{
-        color:rgb(49, 9, 9);
+        color: var(--choscuro);
         font-size: 20px;
         font-family: 'Architects Daughter';
     }
@@ -147,7 +151,7 @@ body{
 
     .info a {
         color: greenyellow;
-        background-color: brown;
+        background-color: var(--choscuro);
         width: 120px;
         padding: 8px 0px;
         border-radius: 10px;
@@ -159,7 +163,7 @@ body{
         font-family: 'Architects Daughter';
         font-weight: bold;
         width: 300px;
-        background: var(--secondary);
+        background: linear-gradient(to top, var(--colCard));
         padding: 20px;
         border-radius: 15px;
         display: flex;
@@ -207,6 +211,7 @@ body{
         border-style:groove;
         border-color: brown;
         border-width: 10px;
+        border-radius: 1rem;
     }
 
     .choco-promocion-creador {
@@ -244,4 +249,122 @@ body{
         font-weight: 700;
     }
 
-}
+    .back2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Adicional{
+        background: linear-gradient(to top, var(--gradiente));
+        width: 900px;
+        height: 325px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 1rem;
+        
+    }
+
+    #Adicional h2{
+        color: var(--chocoLight);
+    }
+
+    .Ad{
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;;
+        
+    }
+
+    .chocoD {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Architects Daughter';
+        font-size: 20px;
+        border-radius: 1rem;
+        width:900px;
+        height:325px;
+    }
+
+    .chocoD p {
+        font-weight: bold;
+        width: 850px;
+    }
+
+    .AdCajas{
+        background: linear-gradient(to top, var(--gradiente));
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        width: 900px;
+        height: 250px;
+        border-radius: 1rem;
+
+    }
+
+    .cajas {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 900px;
+    }
+
+    .cajitas{
+        background:linear-gradient(var(--chocoGrad));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 1rem;
+    }
+
+    .cajitas :hover{
+        background:linear-gradient(var(--chocoGrad));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 210px;
+        height: 210px;
+        border-radius: 1rem;
+        cursor: pointer;
+        
+    }
+
+    .imgCuad {
+        width: 150px;
+        height: 150px;
+        border-radius: 1rem;
+    }
+
+    .segInst{
+        background-color: var(--headFoot);
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin-top: 300px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .segInst p {
+        display: flex;
+        color: red;
+        font-family: 'Architects Daughter';
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .logInsta{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
