@@ -1,12 +1,28 @@
+/* https://github.com/Pabloambar/chocolicius_landing.git */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Qwitcher+Grypen&family=Sacramento&display=swap');
 
     :root{
         --gradiente: rgb(71, 50, 50), rgba(209, 151, 151, 0.781); 
         --chocoGrad: rgba(105, 16, 16, 0.473), rgba(209, 151, 151, 0.452); 
         --chocoLight:  rgb(168, 27, 27);
+        --chocoIntermedio: rgb(119, 33, 17);
         --choscuro: rgb(49, 9, 9);
         --colCard: rgba(189, 67, 67, 0.473), rgba(209, 23, 23, 0.452);
         --headFoot: rgba(228, 178, 105, 0.664);
+        --background: #02050e;
+        --primary: #1e50ff;
+        --secondary: #272d37;
+        --btn-bg: #050d26;
+        --bg-azul-10: #e9eeff;
+        --bg-white: #fff;
+        --bg-electric: #f0fbff;
+        --nav-bg: #0f1525;
+        --text-gray: #adb9c7;
+        --text-white: #f3f4f6;
+        --fire: #ff6d00;
+        --electric: #64d3ff;
     }
 
 
@@ -19,20 +35,24 @@
     }
 
     body{
-        background-image: url(/assets/imagenes/fondoChocolates.jpg) ;
-        background-size: cover;   
+      background-image: url(/assets/imagenes/fondoChocolates.jpg);
+      background-size: cover;
+      background-attachment: fixed; 
     }
 
     header{
-        background-color:var(--headFoot);
+        background: linear-gradient(to top, var(--gradiente));
         width: 100%;
         display:flex;
         justify-content: space-between;
         align-items: center;
         height: 65px;
         padding: 0px 30px 0px 30px;
-        position: fixed;
-        /* position: sticky; */
+        /* position: relative; */
+        /* position: fixed;
+        position: absolute;
+        position: static; */
+        position: sticky;
         top: 0;
     }
 
@@ -52,7 +72,7 @@
     }
 
     .navbar{
-        gap: 8px;
+        gap: 200px;
     }
 
     .navbar-list{
@@ -60,7 +80,7 @@
     }
 
     .navbar-list a{
-        color: rgb(255, 0, 0);
+        color: var(--choscuro);
         font-family: 'Architects Daughter';
         font-size: 20px;
         font-weight: bold;
@@ -71,6 +91,158 @@
         text-shadow:2px 8px 8px rgb(77, 29, 2);
         
     }
+
+    .carrito {
+        height: 36px;
+        cursor: pointer;
+      }
+      
+      .carritoCont {
+        position: absolute;
+        top: 65px; 
+        right: 0;
+        padding: 50px 30px;
+        background-color:rgba(104, 23, 3, 0.836);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: calc(100vh - 65px);
+        overflow-y: scroll;
+        z-index: 2;
+        display: none;
+      }
+      
+      .carritoCont::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .carritoCont h2 {
+        color: var(--text-white);
+        font-size: 20px;
+        font-weight: 600;
+      }
+      
+      .cart-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        border: 1px solid var(--electric);
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      .cart-item img {
+        height: 65px;
+        width: 65px;
+      }
+      
+      .item-title {
+        color: var(--text-white);
+        font-weight: 600;
+        font-size: 14px;
+      }
+      
+      .item-bid {
+        color: var(--text-gray);
+        font-size: 12px;
+        font-weight: 300;
+      }
+      
+      .item-price {
+        background-color: #f3f4f6;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        font-size: 20px;
+        font-weight: 800;
+      }
+      
+      .item-handler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      .quantity-handler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 8px;
+        border-radius: 5px;
+        color: var(--text-white);
+        font-weight: 400;
+      }
+      
+      .up {
+        border: 1px solid var(--electric);
+      }
+      
+      .down {
+        background-color: var(--secondary);
+        border: 1px solid var(--electric);
+      }
+      
+      .item-quantity {
+        color: var(--text-gray);
+      }
+      
+      .divider {
+        margin-top: 20px;
+        border: 0.5px solid var(--electric);
+      }
+      
+      .cart-total {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      
+      .cart-total p {
+        color: var(--electric);
+        font-weight: 700;
+      }
+      
+      .cart-total span {
+        background-color: #f3f4f6 ;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 1000;
+        font-size: 20px;
+      }
+
+      .btn-comprar{
+          color: greenyellow;
+          background-color: var(--choscuro);
+          width: 120px;
+          padding: 8px 0px;
+          border-radius: 10px;
+          border: 2px solid brown;
+          font-size: 20px;
+          text-align: center; 
+      }
+
+      .btn-comprar:hover {
+        width: 130px;
+        height: 45px;
+      }
+
+      /*Carrito*/
+      
+      #cart-toggle,
+      #menu-toggle,
+      .menu-label {
+        display: none;
+      }
+      
+      #cart-toggle:checked + .carritoCont {
+        display: flex;
+      }
+      
 
     .cajaFlex{
         display: flex;
@@ -98,13 +270,29 @@
         border-radius: 1rem;
     }
 
-    .marca p{
-        color: black;
+    @keyframes moverCaja {
+      0% {
+          transform: translateX(0);
+      }
+      50%{
+        transform: translate(-710px);
+      }
+      100% {
+          transform: translateX(710px);
+      }
+  }
+
+    .marcaCursiva{
+        color: var(--chocoIntermedio);
         margin-top: 0px;
         font-size: 150px;
         font-family:'Sacramento' ;
         display: flex;
         justify-content: center;
+        animation-name: moverCaja;
+        animation-duration: 1.3s;          
+        animation-iteration-count: 2;
+        animation-direction: alternate;
     }
 
     main{
@@ -120,7 +308,6 @@
         max-width: 1200px;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .info{
@@ -140,23 +327,9 @@
     }
 
     .info p{
-        color: var(--choscuro);
+        color: black;
         font-size: 20px;
         font-family: 'Architects Daughter';
-    }
-
-    .info p > span{
-        font-weight: 800;
-    }
-
-    .info a {
-        color: greenyellow;
-        background-color: var(--choscuro);
-        width: 120px;
-        padding: 8px 0px;
-        border-radius: 10px;
-        font-size: 20px;
-        text-align: center;
     }
 
     .choco-promocion {
@@ -317,21 +490,30 @@
 
     .cajitas{
         background:linear-gradient(var(--chocoGrad));
+        font-family: 'Architects Daughter';
+        font-size: 15px;
+        font-weight: bold;
         display: flex;
-        align-items: center;
+        flex-direction: column;;
+        align-items: center;;
         justify-content: center;
         width: 200px;
         height: 200px;
         border-radius: 1rem;
     }
 
-    .cajitas :hover{
+    .cajitas p {
+      color: darkred;
+    }
+
+    .cajitas:hover{
         background:linear-gradient(var(--chocoGrad));
+        font-size: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 210px;
-        height: 210px;
+        width: 230px;
+        height: 230px;
         border-radius: 1rem;
         cursor: pointer;
         
@@ -344,7 +526,7 @@
     }
 
     .segInst{
-        background-color: var(--headFoot);
+        background: linear-gradient(to bottom, var(--gradiente));
         display: flex;
         flex-direction:row;
         justify-content: center;
@@ -353,18 +535,85 @@
         gap: 20px;
     }
 
-    .segInst p {
+    .logCont{
         display: flex;
-        color: red;
-        font-family: 'Architects Daughter';
-        font-size: 30px;
-        font-weight: bold;
+        width: 40px;
+        height: 40px;
+        border-radius: 1rem;
     }
 
-    .logInsta{
-        display: flex;
-        width: 50px;
-        height: 50px;
-        border-radius: 1rem;
-        cursor: pointer;
+    .mapa{
+      margin-top: 30px;
+      width: 300px;
+      height: 345px; 
+      border-radius: 10px;
     }
+
+    .info-contacto{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 50%;
+  }
+
+  .info-contacto h1{
+    margin-top: 0px;
+    font-size: 48px;
+    font-family: 'Architects Daughter';
+    font-weight: 800;
+    color: var(--choscuro)
+}
+
+.info-contacto p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+}
+
+#contenido-contacto{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.contacto :hover{
+  /* width: 20%; */
+  height: 20%;
+  font-size: 30px;
+}
+
+.cuadroMapa{
+  font-family: 'Architects Daughter';
+  font-weight: bold;
+  width: 300px;
+  background: linear-gradient(to bottom, var(--));
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .marca {
+  animation-name: moverCaja;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; 
+  animation-iteration-count: 2;*/
+
+/* Alternate en la animacion */
+/* .marca { */
+  /* animation-name: moverCaja; */
+  /* animation-duration: 2s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-iteration-count: 2; */
+  /* animation-direction: alternate; */
+/* } */
