@@ -405,10 +405,9 @@
         border-radius: 1rem;
     }
 
-    .media1{
+    .choco-promocion1{
       display: none;
     }
-
    
     .back2{
         display: flex;
@@ -479,12 +478,17 @@
 
     }
 
+    .AdCajas1{
+      display: none;
+    }
+
     .cajas {
         display: flex;
         gap: 50px;
         justify-content: center;
         align-items: center;
         width: 900px;
+         
     }
 
     .cajitas{

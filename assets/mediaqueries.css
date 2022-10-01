@@ -3,6 +3,7 @@
 @media (max-width: 992px) {
 
   body{
+    width: 100%;
     flex-wrap: wrap;
   }
 
@@ -217,6 +218,7 @@
       }
 /* ====================================================================== */
     .cajaFlex{
+      width: 100%;
         display: flex;      
         flex-direction: column;
         flex-wrap: wrap;
@@ -227,15 +229,22 @@
     }
 
     .back{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .marca{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
         background: linear-gradient( to bottom, var(--gradiente));
         margin-top: 100px;
-        width: 900px;
+        /* width: 900px; */
         border-radius: 1rem;
     }
 
@@ -252,6 +261,10 @@
   }
 
     .marcaCursiva{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
         color: var(--chocoIntermedio);
         margin-top: 0px;
         font-size: 150px;
@@ -265,6 +278,10 @@
     }
 
     main{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
         display: flex;
         flex-wrap: wrap;
 
@@ -273,21 +290,581 @@
     }
 
     #descripcion{
-
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .info{
+      /* width: 100%; */
+ 
         display: flex;
 
         gap: 20px;
         width: 50%;
     }
   
-    #media1{
+    #choco-promocion1{
       display: none;
     }
+
+    #adicional{
+      background: linear-gradient(to top, var(--gradiente));
+      width: 100%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 1rem;
+      
+    }
+    #Adicional h2{
+      color: var(--chocoLight);
+    }
+    
+    .Ad{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem;;
+      
+    }
+    
+    .chocoD {    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Architects Daughter';
+      font-size: 25px;
+      text-align: center;
+      border-radius: 1rem;
+      width:100%;
+      height:450px;
+    }
+    
+    .chocoD p {
+      font-weight: bold;
+      width: 600px;
+      text-align: center;
+    }
+    
+    #sp1{
+      display: none;
+    }
+    
+    #sp2{
+      display: flex;
+    }
+    
+    #t1{
+      display: none;
+    }
+    
+    #t2{
+      display: flex;
+      color: var(--chocoLight);
+    }
+    
+    .nose{
+      display: flex;
+      width: 100%;
+    }
+
+    .AdCajas {
+      width: 100%;
+      background: linear-gradient(to top, var(--gradiente));
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      height: 250px;
+      border-radius: 1rem;
+    
+    }
+    
+    .cajas {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 55px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .cajitas{
+      background:linear-gradient(var(--chocoGrad));
+      font-family: 'Architects Daughter';
+      font-size: 15px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 1rem;
+    }
+    
+    .cajitas p {
+    color: darkred;
+    }
+    
+    
+    .imgCuad {
+      width: 150px;
+      height: 150px;
+      border-radius: 1rem;
+    }
+    
+    
+    #contenido-contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .cuadroContacto{
+    background: linear-gradient(to top, var(--gradiente));
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 400px;
+    border-radius: 1rem;
+    justify-content: space-around;
+    }
+    
+    .logCont{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 1rem;
+    }
+    
+    .mapa{
+    width: 300px;
+    height: 345px; 
+    border-radius: 10px;
+    }
+    
+    .info-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    }
+    
+    .info-contacto h1{
+    margin-top: 0px;
+    font-size: 48px;
+    font-family: 'Architects Daughter';
+    font-weight: 800;
+    color: var(--choscuro)
+    }
+    
+    .info-contacto p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+    }
+    
+    
+    .contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    }
+    
+    .contacto :hover{
+    height: 20%;
+    font-size: 30px;
+    }
+    
+    .cuadroMapa{
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+}
+
+/* ################################################################################################################################################ */
+@media(max-width:900px) {
+
+
+  .marca{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+      background: linear-gradient( to bottom, var(--gradiente));
+      margin-top: 100px;
+      border-radius: 1rem;
+  }
+
+  @keyframes moverCaja {
+    0% {
+        transform: translateX(0);
+    }
+    50%{
+      transform: translate(-710px);
+    }
+    100% {
+        transform: translateX(710px);
+    }
+}
+
+  .marcaCursiva{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+      color: var(--chocoIntermedio);
+      margin-top: 0px;
+      font-size: 150px;
+      font-family:'Sacramento' ;
+      display: flex;
+      justify-content: center;
+      animation-name: moverCaja;
+      animation-duration: 1.3s;          
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+  }
+
+  main{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+      display: flex;
+      flex-wrap: wrap;
+
+      color: black;
+
+  }
+
+  .back{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+  
+  }
+  
+  #descripcion{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    height: 100%; 
+  }
+  
+  .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .info p{
+    width: 100%;
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+  }
+  
+
+  .choco-promocion{
+    display: none;
+  }
+
+  .choco-promocion1{
+    margin-top: 20px;
+    font-family: 'Architects Daughter';
+    font-weight: bold;
+    width: 100%;
+    background: linear-gradient(to top, var(--gradiente));
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+  
+  }
+
+  .choco-promocion-info1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .choco-promocion-top1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .choco-promocion-top1 h3 {
+    font-weight: 600;
+    font-size: 45px;
+    white-space: nowrap;
+  }
+  
+  
+  
+  .choco-promocion-bottom1 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    /* display: flex; */
+    font-size: 35px;
+  }
+  
+  .choco-promocion-bottom1 span{
+  color: whitesmoke;
+  background-color: black;
+  font-size: 45px;
+  border-radius: 4px;
+  } 
+
+  .promo{
+    /* width: 100%; */
+    width: 500px;
+    height: 500px;
+    border-style:groove;
+    border-color: brown;
+    border-width: 10px;
+    border-radius: 1rem;
+  }
+  .btn-comprar1{
+    display: none;
+  }
+  .btn-comprar2{
+    display: flex;
+    color: greenyellow;
+    background-color: var(--choscuro);
+    width: 400px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    border: 2px solid brown;
+    font-size: 40px;
+    text-align: center; 
+    justify-content: center;
+  }
+
+  #adicional{
+    background: linear-gradient(to top, var(--gradiente));
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    
+  }
+  #Adicional h2{
+    color: var(--chocoLight);
+  }
+  
+  .Ad{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;;
+    
+  }
+  
+  .chocoD {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Architects Daughter';
+    font-size: 25px;
+    text-align: center;
+    border-radius: 1rem;
+    width:100%;
+    height:450px;
+  }
+  
+  .chocoD p {
+    font-weight: bold;
+    width: 600px;
+    text-align: center;
+  }
+  
+  #sp1{
+    display: none;
+  }
+  
+  #sp2{
+    display: flex;
+  }
+  
+  #t1{
+    display: none;
+  }
+  
+  #t2{
+    display: flex;
+    color: var(--chocoLight);
+  }
+  
+  .AdCajas {
+    width: 100%;
+    background: linear-gradient(to top, var(--gradiente));
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    border-radius: 1rem;
+  
+  }
+  
+  .cajas {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cajitas{
+    background:linear-gradient(var(--chocoGrad));
+    font-family: 'Architects Daughter';
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;;
+    justify-content: center;
+    width: 175px;
+    height: 175px;
+    border-radius: 1rem;
+  }
+  
+  .cajitas p {
+  color: darkred;
+  }
+  
+  .cajitas:hover{
+    background:linear-gradient(var(--chocoGrad));
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+  }
+  
+  .imgCuad {
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+  }
+  
+  
+  #contenido-contacto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .cuadroContacto{
+  background: linear-gradient(to top, var(--gradiente));
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  justify-content: space-around;
+  }
+  
+  .logCont{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 1rem;
+  }
+  
+  .mapa{
+    display: flex;
+  width: 100%;
+  height: 100%; 
+  border-radius: 10px;
+  }
+  
+  .info-contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  }
+  
+  .info-contacto h1{
+  margin-top: 0px;
+  font-size: 35px;
+  font-family: 'Architects Daughter';
+  font-weight: 800;
+  color: var(--choscuro)
+  }
+  
+  .info-contacto p{
+  color: black;
+  font-size: 18px;
+  font-family: 'Architects Daughter';
+  font-weight: bold;
+  }
+  
+  
+  .contacto{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  }
+  
+  .contacto :hover{
+  height: 20%;
+  font-size: 30px;
+  }
+  
+  .cuadroMapa{
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 }
 
 /* ################################################################################################################################################ */
@@ -303,26 +880,15 @@
     flex-wrap: wrap;
   }
 
-  /* ============================================================================================================================================*/
-
-/* ====================================================================== */
-.cajaFlex{
-    display: flex;      
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.back{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+/* ============================= */
 
 .marca{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
     background: linear-gradient( to bottom, var(--gradiente));
     margin-top: 100px;
-    width: 800px;
     border-radius: 1rem;
 }
 
@@ -339,9 +905,13 @@
 }
 
 .marcaCursiva{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
     color: var(--chocoIntermedio);
     margin-top: 0px;
-    font-size: 200px;
+    font-size: 100px;
     font-weight: 900;
     font-family:'Sacramento' ;
     display: flex;
@@ -353,8 +923,21 @@
 }
 
 main{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
     display: flex;
     flex-wrap: wrap;
+
+    color: black;
+
+}
+
+.cajaFlex{
+    display: flex;      
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -362,37 +945,73 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 300px;
 
 }
 
 #descripcion{
+
   display: flex;
   flex-wrap: wrap;
-  width:800px;
-  height: 970px; 
+  align-items: center;
+  width:100%;
+  height: 100%; 
 }
 
 .info{
-    display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
 
+}
+
+.info h1{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
 }
 
 .info p{
+  width: 100%;
   margin-top: auto;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 1000;
+  text-align: center;
 }
 
 
-
-
-.choco-promocion {
-  
+.choco-promocion{
   display: none;
+}
 
+.choco-promocion1{
+  margin-top: 20px;
+  font-family: 'Architects Daughter';
+  font-weight: bold;
+  width: 100%;
+  background: linear-gradient(to top, var(--gradiente));
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+
+}
+.promo{
+  /* width: 100%; */
+  width: 350px;
+  height: 350px;
+  border-style:groove;
+  border-color: brown;
+  border-width: 10px;
+  border-radius: 1rem;
 }
 
 .choco-promocion-info1{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,6 +1019,7 @@ main{
 }
 
 .choco-promocion-top1 {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -408,35 +1028,27 @@ main{
 
 .choco-promocion-top1 h3 {
   font-weight: 600;
-  font-size: 55px;
+  font-size: 35px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 
 
 .choco-promocion-bottom1 {
+  width: 100%;
+  align-items: center;
   text-align: center;
-  display: flex;
-  font-size: 50px;
+  /* display: flex; */
+  font-size: 25px;
 }
 
 .choco-promocion-bottom1 span{
-/* color: rgb(237, 253, 15); */
 color: whitesmoke;
 background-color: black;
-font-size: 50px;
+font-size: 30px;
 border-radius: 4px;
 } 
-.promo{
-  width: 700px;
-  height: 700px;
-  border-style:groove;
-  border-color: brown;
-  border-width: 10px;
-  border-radius: 1rem;
-}
+
 .btn-comprar1{
   display: none;
 }
@@ -444,34 +1056,19 @@ border-radius: 4px;
   display: flex;
   color: greenyellow;
   background-color: var(--choscuro);
-  width: 400px;
+  width: 350px;
   padding: 8px 0px;
   border-radius: 10px;
   border: 2px solid brown;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center; 
   justify-content: center;
 }
 
-.media1{
-  margin-top: 20px;
-  font-family: 'Architects Daughter';
-  font-weight: bold;
-  width: 800px;
-  background: linear-gradient(to top, var(--gradiente));
-  padding: 20px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-
-}
-
 #adicional{
   background: linear-gradient(to top, var(--gradiente));
-  width: 800px;
-  height: 400px;
+  width: 100%;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -485,6 +1082,8 @@ border-radius: 4px;
 }
 
 .Ad{
+  width: 100%;
+  height: 600px;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;;
@@ -494,18 +1093,19 @@ border-radius: 4px;
 .chocoD {    
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-family: 'Architects Daughter';
   font-size: 25px;
-  text-align: center;
+  text-align: justify;
   border-radius: 1rem;
-  width:800px;
-  height:400px;
+  width:100%;
+  height:600px;
 }
 
 .chocoD p {
   font-weight: bold;
-  width: 600px;
+  width: 100%;
   text-align: center;
 }
 
@@ -524,68 +1124,93 @@ border-radius: 4px;
 #t2{
   display: flex;
   color: var(--chocoLight);
+  text-align: center;
 }
 
-.AdCajas{
-  background: linear-gradient(to top, var(--gradiente));
+.AdCajas {
+display:none;
+
+}
+
+.AdCajas1{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  /* background: linear-gradient(to top, var(--gradiente)); */
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
-  width: 900px;
-  height: 250px;
   border-radius: 1rem;
-
 }
-
-.cajas {
+.cajas1 {
+  width: 100%;
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  width: 900px;
 }
 
-.cajitas{
-  background:linear-gradient(var(--chocoGrad));
+.cajita1{
+  background:linear-gradient(var(--gradiente));
   font-family: 'Architects Daughter';
   font-size: 15px;
   font-weight: bold;
   display: flex;
-  flex-direction: column;;
-  align-items: center;;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 175px;
   border-radius: 1rem;
+  gap: 60px;
+}
+
+.cajita2{
+  background:linear-gradient(var(--gradiente));
+  font-family: 'Architects Daughter';
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 175px;
+  border-radius: 1rem;
+  gap: 10px;
+}
+
+.cajita3{
+  background:linear-gradient(var(--gradiente));
+  font-family: 'Architects Daughter';
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 175px;
+  border-radius: 1rem;
+  gap: 30px;
 }
 
 .cajitas p {
 color: darkred;
 }
 
-.cajitas:hover{
-  background:linear-gradient(var(--chocoGrad));
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 230px;
-  height: 230px;
-  border-radius: 1rem;
-  cursor: pointer;
-  
-}
 
-.imgCuad {
+.imgCuad1 {
   width: 150px;
   height: 150px;
   border-radius: 1rem;
+  align-items: center;
 }
 
 
 #contenido-contacto{
-max-width: 1200px;
+width: 100%;
 display: flex;
 justify-content: center;
 }
@@ -595,10 +1220,11 @@ background: linear-gradient(to top, var(--gradiente));
 margin-top: 20px;
 margin-bottom: 20px;
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 align-content: center;
-width: 900px;
-height: 400px;
+width: 100%;
+height: 100%;
 border-radius: 1rem;
 justify-content: space-around;
 }
@@ -611,8 +1237,421 @@ border-radius: 1rem;
 }
 
 .mapa{
-width: 300px;
+width:100%;
 height: 345px; 
+border-radius: 10px;
+
+}
+
+.info-contacto{
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
+gap: 25px;
+width: 50%;
+}
+
+.info-contacto h1{
+margin-top: 0px;
+font-size: 45px;
+text-align: center;
+font-family: 'Architects Daughter';
+font-weight: 800;
+color: var(--choscuro)
+}
+
+.info-contacto p{
+color: black;
+font-size: 15px;
+font-family: 'Architects Daughter';
+font-weight: bold;
+}
+
+
+.contacto{
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: center;
+justify-content: space-between;
+}
+
+.contacto :hover{
+height: 20%;
+font-size: 30px;
+}
+
+.cuadroMapa{
+width: 300px;
+padding: 20px;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+}
+/* ############################################################################################################################################# */
+@media (max-width: 400px) {
+  .cart {
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+/* ============================== */
+
+.marca{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+    background: linear-gradient( to bottom, var(--gradiente));
+    margin-top: 100px;
+    border-radius: 1rem;
+}
+
+@keyframes moverCaja {
+  0% {
+      transform: translateX(0);
+  }
+  50%{
+    transform: translate(-710px);
+  }
+  100% {
+      transform: translateX(710px);
+  }
+}
+
+.marcaCursiva{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+    color: var(--chocoIntermedio);
+    margin-top: 0px;
+    font-size: 70px;
+    font-family:'Sacramento' ;
+    display: flex;
+    justify-content: center;
+    animation-name: moverCaja;
+    animation-duration: 1.3s;          
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+main{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    color: black;
+
+}
+
+.cajaFlex{
+    display: flex;      
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.back{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 300px;
+
+}
+
+#descripcion{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width:100%;
+  height: 100%; 
+}
+
+.info{
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.info p{
+  width: 100%;
+  margin-top: auto;
+  font-size: 20px;
+  font-weight: 1000;
+  text-align: center;
+}
+
+
+.choco-promocion{
+  display: none;
+}
+
+.choco-promocion1{
+  margin-top: 20px;
+  font-family: 'Architects Daughter';
+  font-weight: bold;
+  width: 100%;
+  background: linear-gradient(to top, var(--gradiente));
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+
+}
+
+.choco-promocion-info1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.choco-promocion-top1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.choco-promocion-top1 h3 {
+  font-weight: 600;
+  font-size: 35px;
+  white-space: nowrap;
+}
+
+
+
+.choco-promocion-bottom1 {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  /* display: flex; */
+  font-size: 25px;
+}
+
+.choco-promocion-bottom1 span{
+color: whitesmoke;
+background-color: black;
+font-size: 30px;
+border-radius: 4px;
+} 
+
+.promo{
+  /* width: 100%; */
+  width: 300px;
+  height: 300px;
+  border-style:groove;
+  border-color: brown;
+  border-width: 10px;
+  border-radius: 1rem;
+}
+.btn-comprar1{
+  display: none;
+}
+.btn-comprar2{
+  display: flex;
+  color: greenyellow;
+  background-color: var(--choscuro);
+  width: 300px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  border: 2px solid brown;
+  font-size: 30px;
+  text-align: center; 
+  justify-content: center;
+}
+
+#adicional{
+  background: linear-gradient(to top, var(--gradiente));
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 1rem;
+  
+}
+#Adicional h2{
+  color: var(--chocoLight);
+}
+
+.Ad{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;;
+  
+}
+
+.chocoD {    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Architects Daughter';
+  font-size: 25px;
+  text-align: center;
+  border-radius: 1rem;
+  width:100%;
+  height:700px;
+}
+
+.chocoD p {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+#sp1{
+  display: none;
+}
+
+#sp2{
+  display: flex;
+}
+
+#t1{
+  display: none;
+}
+
+#t2{
+  display: flex;
+  text-align: center;;
+  color: var(--chocoLight);
+}
+
+.AdCajas {
+ display: none;
+
+}
+
+.AdCajas1{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 1rem;
+}
+.cajas1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajita1{
+  background:linear-gradient(var(--gradiente));
+  font-family: 'Architects Daughter';
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 175px;
+  border-radius: 1rem;
+  gap: 60px;
+}
+
+.cajita2{
+  background:linear-gradient(var(--gradiente));
+  font-family: 'Architects Daughter';
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 175px;
+  border-radius: 1rem;
+  gap: 10px;
+}
+
+.cajita3{
+  background:linear-gradient(var(--gradiente));
+  font-family: 'Architects Daughter';
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 175px;
+  border-radius: 1rem;
+  gap: 30px;
+}
+
+.cajitas p {
+color: darkred;
+}
+
+
+.imgCuad1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+
+#contenido-contacto{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+}
+
+.cuadroContacto{
+background: linear-gradient(to top, var(--gradiente));
+margin-top: 20px;
+margin-bottom: 20px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+width: 100%;
+height:100%;
+border-radius: 1rem;
+justify-content: space-around;
+}
+
+.logCont{
+display: flex;
+width: 40px;
+height: 40px;
+border-radius: 1rem;
+}
+
+.mapa{
+width: 100%;
+height: 100%; 
 border-radius: 10px;
 }
 
@@ -625,7 +1664,7 @@ width: 50%;
 
 .info-contacto h1{
 margin-top: 0px;
-font-size: 48px;
+font-size: 35px;
 font-family: 'Architects Daughter';
 font-weight: 800;
 color: var(--choscuro)
