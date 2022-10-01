@@ -240,7 +240,6 @@
           text-align: center; 
       }
 
-
       .btn-comprar1:hover {
         width: 130px;
         height: 45px;
@@ -250,7 +249,16 @@
         display: none;
     }
 
-
+    .btn-comprar3{
+      color: greenyellow;
+      background-color: var(--choscuro);
+      width: 120px;
+      padding: 8px 0px;
+      border-radius: 10px;
+      border: 2px solid brown;
+      font-size: 20px;
+      text-align: center; 
+  }
 
     .cajaFlex{
         display: flex;
