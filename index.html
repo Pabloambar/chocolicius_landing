@@ -8,126 +8,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
-    <!-- <link rel="stylesheet" href="/assets/mediaqueries.css"> -->
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
     <title>Chocolicius</title>
 </head>
-<body>
 
-    <header>
-        <img src="/assets/imagenes/chocolates1.png" alt="Logo" class="logo">
-        <nav class="navbar">
-            <label for="menu-toggle" class="menu-label">
-                <img src="./assets/imagenes/menu.png" class="menu-icon">
+<body>
+  <header>
+      <img src="/assets/imagenes/chocolates1.png" alt="Logo" class="logo">
+      <nav class="navbar">
+          <label for="menu-toggle" class="menu-label"><img src="./assets/imagenes/iconoMenu (1).png" class="menu-icon"></label>
+          <input type="checkbox" id="menu-toggle">
+          <ul class="navbar-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="pronto.html" target="_blank">Productos</a></li>
+              <li><a href="pronto.html" target="_blank">Acerca de mi</a></li>
+              <li><a href="pronto.html" target="_blank">Contacto</a></li>
+              <!-- <li><a href="https://github.com/Pabloambar/chocolicius_landing.git" target="_blank">Repo de la página</a></li> -->
+          </ul>
+      
+          <label for="cart-toggle" class="cart-label">
+              <img src="./assets/imagenes/carritoCompras1.png" alt="Carrito de Compras" class="carrito" />
             </label>
-            <input type="checkbox" id="menu-toggle">
-            <ul class="navbar-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="pronto.html" target="_blank">Productos</a></li>
-                <li><a href="pronto.html" target="_blank">Acerca de mi</a></li>
-                <li><a href="pronto.html" target="_blank">Contacto</a></li>
-                <!-- <li><a href="https://github.com/Pabloambar/chocolicius_landing.git" target="_blank">Repo de la página</a></li> -->
-            </ul>
-        
-            <label for="cart-toggle" class="cart-label">
-                <img src="./assets/imagenes/carritoCompras1.png" alt="Carrito de Compras" class="carrito" />
-              </label>
-              <input type="checkbox" id="cart-toggle">
-              <!-- cart -->
-              <div class="carritoCont">
-                <h2>Tus Chocolates</h2>
-            
-                <div class="cart-item">
-                  <img src="./assets/imagenes/Chocoli-1.jpeg" alt="chocolate">
-                  <div class="item-info">
-                    <h3 class="item-title">Chocoli-1</h3>
-                    <p class="item-bid">Chocolate</p>
-                    <span class="item-price">$1200</span>
-                  </div>
-                  <div class="item-handler">
-                    <span class="quantity-handler down"> - </span>
-                    <span class="item-quantity"> 1 </span>
-                    <span class="quantity-handler up"> + </span>
-                  </div>
+            <input type="checkbox" id="cart-toggle">
+            <!-- carrito -->
+            <div class="carritoCont">
+              <h2>Tus Chocolates</h2>
+          
+              <div class="cart-item">
+                <img src="./assets/imagenes/Chocoli-1.jpeg" alt="chocolate">
+                <div class="item-info">
+                  <h3 class="item-title">Chocoli - 1</h3>
+                  <p class="item-bid">Chocolate</p>
+                  <span class="item-price">$ 1200</span>
                 </div>
-            
-                <div class="cart-item">
-                  <img src="./assets/imagenes/Chocoli-5.png" alt="chocolate">
-                  <div class="item-info">
-                    <h3 class="item-title">Chocoli-5</h3>
-                    <p class="item-bid">Chocolate</p>
-                    <span class="item-price">$800</span>
-                  </div>
-                  <div class="item-handler">
-                    <span class="quantity-handler down"> - </span>
-                    <span class="item-quantity"> 1 </span>
-                    <span class="quantity-handler up"> + </span>
-                  </div>
+                <div class="item-handler">
+                  <span class="quantity-handler down"> - </span>
+                  <span class="item-quantity"> 1 </span>
+                  <span class="quantity-handler up"> + </span>
                 </div>
-            
-            
-                <span class="divider"></span>
-                <div class="cart-total">
-                  <p>Total:</p>
-                  <span>$2000</span>
-                </div>
-                <a class="btn-comprar" href="pronto.html" target="_blank">Comprar</a>
-            
               </div>
-            
-        </nav>
-    
-    </header>
-    <div class="cajaFlex">
+          
+              <div class="cart-item">
+                <img src="./assets/imagenes/Chocoli-5.png" alt="chocolate">
+                <div class="item-info">
+                  <h3 class="item-title">Chocoli - 5</h3>
+                  <p class="item-bid">Chocolate</p>
+                  <span class="item-price">$ 800</span>
+                </div>
+                <div class="item-handler">
+                  <span class="quantity-handler down"> - </span>
+                  <span class="item-quantity"> 1 </span>
+                  <span class="quantity-handler up"> + </span>
+                </div>
+              </div>
+          
+          
+              <span class="divider"></span>
+              <div class="cart-total">
+                <p>Total:</p>
+                <span>$2000</span>
+              </div>
+              <a class="btn-comprar1" href="pronto.html" target="_blank">Comprar</a>
+          
+            </div>
+          
+      </nav>
+  
+  </header>
+
+    <main>
+      <div class="cajaFlex">
         <div class="marca"> <p class="marcaCursiva">Chocolicius</p></div>
-        <div class="back">
-            <main>
-                <section id="contenido">
-                    <div class="info">
-                        <h1>Chocolate artesanal</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Inventore autem accusantium, quibusdam dignissimos atque
-                            repellat amet nemo ipsa hic itaque, reiciendis, dolore 
-                            facere dolor odio cupiditate saepe illum? Dolorem, iusto.
-                            <span>Chocolicius</span> by Fiona.
-                        </p>
-                        <a class="btn-comprar" href="pronto.html" target="_blank">Compralo!</a>
-                    </div>
-                    <div class="choco-promocion">
-                        <img src="/assets/imagenes/Chocoli-5.png" alt="chocolates" class="promo">
-                        <div class="choco-promocion-info">
-                            <div class="choco-promocion-top">
-                                <h3>"Lo más vendido"</h3>
-                              </div>
-                              <div class="choco-promocion-bottom">
-                                <div class="choco-promocion-creador">
-                                  <img src="/assets/imagenes/fioFoto.jpg" alt="Imagen de Fiona"/>
-                                  <div class="creador-info">
-                                    <p>Creador</p>
-                                    <p>Fiona Caccialupi</p>
-                                  </div>
-                                </div>
-                                <div class="choco-promocion-precio">
-                                  <p>Precio</p>
-                                  <span>$1200</span>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-            
-            </main>
+          
+            <section id="descripcion">
+              <div class="back">
+                <div class="info">
+                  <h1>Chocolate artesanal</h1>
+                  <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Inventore autem accusantium, quibusdam dignissimos atque
+                      repellat amet nemo ipsa hic itaque, reiciendis, dolore 
+                      facere dolor odio cupiditate saepe illum? Dolorem, iusto.
+                      <span>Chocolicius</span> by Fiona.
+                  </p>
+                  <a class="btn-comprar1" href="pronto.html" target="_blank">Compralo!</a>
+                  </div>
+                  <div class="choco-promocion">
+                    <img src="/assets/imagenes/Chocoli-5.png" alt="chocolates" class="promo">
+                    <div class="choco-promocion-info">
+                      <div class="choco-promocion-top">
+                        <h3>"Lo más vendido"</h3>
+                      </div>
+                      <div class="choco-promocion-bottom">
+                        <p>Promoción 2 x <span>$ 1200 </span></p>
+                      </div>
+                    </div> 
+                  </div>
+              </div>
+              
+            </section>
+       </div>
+       <!-- Aparece solamente con media queries para celu -->
+       <section #media1>
+        <div class="media1">
+          <img src="/assets/imagenes/Chocoli-5.png" alt="chocolates" class="promo">
+          <div class="choco-promocion-info1">
+            <div class="choco-promocion-top1">
+              <h3>"Lo más vendido"</h3>
+            </div>
+            <div class="choco-promocion-bottom1">
+              <p>Promoción 2 x <span>$ 1200 </span></p>
+            </div>
+            <a class="btn-comprar2" href="pronto.html" target="_blank">Compralo!</a>
+          </div> 
         </div>
-    
-    </div>
-    <div class="back2">
-    <section id="Adicional">
-        <div class="Ad">
+       </section>
+
+       <section id="adicional">
+         <div class="back2">
+          <div class="Ad">
             <div class="chocoD">
-                <h2>El chocolate sana el corazón y alimenta el alma.</h2>
+                <h2 id="t1">El chocolate sana el corazón y alimenta el alma.</h2>
+                <h2 id="t2">Hablemos del chocolate...</h2>
                  <p>
-                    <span>El chocolate representa una forma de dar y recibir afecto, tanto así que el día de los enamorados se suelen 
+                    <span id="sp1">El chocolate representa una forma de dar y recibir afecto, tanto así que el día de los enamorados se suelen 
                         regalar bombones de chocolate y esto tiene una explicación científica. El chocolate contiene fenilalanina que es un aminoácido el cual a nivel
                         cerebral causa una descarga de hormonas, entre ellas, la dopamina que nos llena de euforia, la noradrenalina que acelera el corazón y la 
                         serotonina que nos proporciona bienestar.
@@ -135,42 +139,39 @@
                         gustaría que fuese el protagonista de nuestra historia, y todo esto nos hace amar aún más este alimento.
                         Definitivamente el chocolate alivia nuestras penas, nos llena de energía, nos enamora y produce bienestar, suficientes motivos para regalarse 
                         un poquito de cariño cuando lo necesiten.</span> 
+                    <span id="sp2">
+                      A la hora de hablar de chocolate, casi siempre nos conectamos con un recuerdo agradable, una sensación placentera o con algún sueño donde nos 
+                      gustaría que fuese el protagonista de nuestra historia, y todo esto nos hace amar aún más este alimento.
+                      Definitivamente el chocolate alivia nuestras penas, nos llena de energía, nos enamora y produce bienestar, suficientes motivos para regalarse 
+                      un poquito de cariño cuando lo necesiten.
+                    </span>
                 </p>
             </div>
         
             <div class="AdCajas">
                 <div class="cajas">
-                <div class="cajitas"><p>100% Artesanal</p><img src="/assets/imagenes/elaboChoco1.jpg" alt="imagen1"  class="imgCuad"></div>
-                <div class="cajitas"><p>Productos sin T.A.C.C.</p><img src="/assets/imagenes/chocoSinTacc.jpg" alt="imagen2"  class="imgCuad"></div>
-                <div class="cajitas"><p>Envíos sin cargo</p><img src="/assets/imagenes/envioLogo1.png" alt="imagen3" class="imgCuad" ></div>
-            </div>   
-    </section>
-    </div>
-    </div>
-    <div class="segInst">
-   
-    </div> 
-    
-    <div class="cajaFlex">
-    
-    <div class="back">
-    
+                  <div class="cajitas"><p>100% Artesanal</p><img src="/assets/imagenes/elaboChoco1.jpg" alt="imagen1"  class="imgCuad"></div>
+                  <div class="cajitas"><p>Productos sin T.A.C.C.</p><img src="/assets/imagenes/chocoSinTacc.jpg" alt="imagen2"  class="imgCuad"></div>
+                  <div class="cajitas"><p>Envíos sin cargo</p><img src="/assets/imagenes/envioLogo1.png" alt="imagen3" class="imgCuad" ></div>
+                </div>   
+            </div>
+        </div>
         <section id="contenido-contacto">
-            <div class="info-contacto">
-                <h1>Contactanos</h1>
-                <div class="contacto"><p>Seguinos en instagram</p><a href="https://www.instagram.com/chocoli_cius/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagenes/instagram4.png" alt="insta" class="logCont" ></a></div>
-                <div class="contacto"><p>Nueva Cordoba</p><a href="https://goo.gl/maps/WW5jbpcGhYgkgyGH6" target="_blank" rel="noopener noreferrer"><img src="/assets/imagenes/ubicacion1.png" alt="ubicacion" class="logCont"></a></div>
-                <div class="contacto"><p>Río Tercero</p><a href="https://goo.gl/maps/aACYpTUp2XgPoY3r7" target="_blank" rel="noopener noreferrer"><img src="/assets/imagenes/ubicacion1.png" alt="ubicacion" class="logCont"></a></div>
-                <div class="contacto"><p>chocoliciusbyfiona@correo.com</p><a href=""><img src="/assets/imagenes/logoMail.png" alt="correo" class="logCont"></a></div>
-            </div>
-            <div class="cuadroMapa">
+          <div class="cuadroContacto">
+                  <div class="info-contacto">
+                      <h1>Contactanos</h1>
+                      <div class="contacto"><p>Seguinos en instagram</p><a href="https://www.instagram.com/chocoli_cius/" target="_blank" rel="noopener noreferrer"><img src="/assets/imagenes/instagram4.png" alt="insta" class="logCont" ></a></div>
+                      <div class="contacto"><p>Nueva Cordoba</p><a href="https://goo.gl/maps/WW5jbpcGhYgkgyGH6" target="_blank" rel="noopener noreferrer"><img src="/assets/imagenes/ubicacion1.png" alt="ubicacion" class="logCont"></a></div>
+                      <div class="contacto"><p>Río Tercero</p><a href="https://goo.gl/maps/aACYpTUp2XgPoY3r7" target="_blank" rel="noopener noreferrer"><img src="/assets/imagenes/ubicacion1.png" alt="ubicacion" class="logCont"></a></div>
+                      <div class="contacto"><p>chocoliciusbyfiona@correo.com</p><a href=""><img src="/assets/imagenes/logoMail.png" alt="correo" class="logCont"></a></div>
+                  </div>
+                  <div class="cuadroMapa">    
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7929460982996!2d-64.1903708851148!3d-31.41983030356193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses!2sar!4v1664312480079!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"> mapa</iframe>
+                  </div>
+          </div>
+        </section>        
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7929460982996!2d-64.1903708851148!3d-31.41983030356193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses!2sar!4v1664312480079!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"> mapa</iframe>
-            
-            </div>
-        </section>
-    
-    </div>
-
+       </section>          
+    </main>
 </body>
 </html>

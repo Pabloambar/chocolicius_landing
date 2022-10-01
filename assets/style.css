@@ -92,6 +92,19 @@
         
     }
 
+          /*Carrito*/
+      
+          #cart-toggle,
+          #menu-toggle,
+          .menu-label {
+            display: none;
+          }
+          
+          #cart-toggle:checked + .carritoCont {
+            display: flex;
+          }
+          
+
     .carrito {
         height: 36px;
         cursor: pointer;
@@ -111,6 +124,7 @@
         overflow-y: scroll;
         z-index: 2;
         display: none;
+        font-family: 'Architects Daughter';
       }
       
       .carritoCont::-webkit-scrollbar {
@@ -215,7 +229,7 @@
         font-size: 20px;
       }
 
-      .btn-comprar{
+      .btn-comprar1{
           color: greenyellow;
           background-color: var(--choscuro);
           width: 120px;
@@ -226,23 +240,17 @@
           text-align: center; 
       }
 
-      .btn-comprar:hover {
+
+      .btn-comprar1:hover {
         width: 130px;
         height: 45px;
       }
 
-      /*Carrito*/
-      
-      #cart-toggle,
-      #menu-toggle,
-      .menu-label {
+      .btn-comprar2{
         display: none;
-      }
-      
-      #cart-toggle:checked + .carritoCont {
-        display: flex;
-      }
-      
+    }
+
+
 
     .cajaFlex{
         display: flex;
@@ -253,14 +261,17 @@
     }
 
     .back{
-        display: flex;
+      max-width: 1200px;
+      display: flex;
+      justify-content: center;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
         background: linear-gradient(to top, var(--gradiente));
         width:900px;
         height: 450px; 
         border-radius: 1rem;
-        margin-top: 20px;
+        margin-top: 20px; */
     }
 
     .marca{
@@ -304,10 +315,18 @@
         width: 100%;
     }
 
-    #contenido{
-        max-width: 1200px;
+    #descripcion{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(to top, var(--gradiente));
+      width:900px;
+      height: 450px; 
+      border-radius: 1rem;
+      margin-top: 20px;
+        /* max-width: 1200px;
         display: flex;
-        justify-content: center;
+        justify-content: center; */
     }
 
     .info{
@@ -360,68 +379,37 @@
 
     .choco-promocion-top h3 {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 25px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
-    .choco-promocion-top span {
-        background-color: gray;
-        text-align: center;
-        width: 50px;
-        padding: 3px 0px;
-        font-size: 14px;
-        border-radius: 10px;
-    }
-
     .choco-promocion-bottom {
-        display: flex;
-        justify-content: space-between;
+        text-align: center;
+        font-size: 20px;
     }
 
-    .promo{
+    .choco-promocion-bottom span{
+      /* color: rgb(237, 253, 15); */
+      color: whitesmoke;
+      background-color: black;
+      font-size: 25px;
+      border-radius: 4px;
+    }    
+
+     .promo{
         border-style:groove;
         border-color: brown;
         border-width: 10px;
         border-radius: 1rem;
     }
 
-    .choco-promocion-creador {
-        display: flex;
-        align-items: center;
-        gap: 5px;
+    .media1{
+      display: none;
     }
 
-    .choco-promocion-creador img {
-        height: 40px;
-        width: 40px;
-        border-radius: 50px;
-    }
-
-    .creador-info p:first-child,
-    .choco-promocion-precio p {
-        
-        font-size: 12px;
-        font-weight: 300;
-    }
-
-    .choco-promocion-precio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    .choco-promocion-precio span,
-    .creador-info p:last-child {
-        font-size: 14px;
-    }
-
-    .choco-promocion-precio span {
-        font-weight: 700;
-    }
-
+   
     .back2{
         display: flex;
         flex-direction: column;
@@ -429,7 +417,7 @@
         justify-content: center;
     }
 
-    #Adicional{
+    #adicional{
         background: linear-gradient(to top, var(--gradiente));
         width: 900px;
         height: 325px;
@@ -441,9 +429,7 @@
         
     }
 
-    #Adicional h2{
-        color: var(--chocoLight);
-    }
+   
 
     .Ad{
         justify-content: center;
@@ -463,9 +449,22 @@
         height:325px;
     }
 
+    .chocoD h2 {
+      color: var(--chocoLight);
+    }
+
+    #t2{
+      display: none;
+    }
+
     .chocoD p {
         font-weight: bold;
         width: 850px;
+        text-align: center;
+    }
+
+    #sp2{
+      display: none;
     }
 
     .AdCajas{
@@ -525,58 +524,61 @@
         border-radius: 1rem;
     }
 
-    .segInst{
-        background: linear-gradient(to bottom, var(--gradiente));
-        display: flex;
-        flex-direction:row;
-        justify-content: center;
-        margin-top: 300px;
-        margin-bottom: 20px;
-        gap: 20px;
-    }
-
-    .logCont{
-        display: flex;
-        width: 40px;
-        height: 40px;
-        border-radius: 1rem;
-    }
-
-    .mapa{
-      margin-top: 30px;
-      width: 300px;
-      height: 345px; 
-      border-radius: 10px;
-    }
-
-    .info-contacto{
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      width: 50%;
-  }
-
-  .info-contacto h1{
-    margin-top: 0px;
-    font-size: 48px;
-    font-family: 'Architects Daughter';
-    font-weight: 800;
-    color: var(--choscuro)
-}
-
-.info-contacto p{
-    color: black;
-    font-size: 20px;
-    font-family: 'Architects Daughter';
-    font-weight: bold;
-}
-
+   
 #contenido-contacto{
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
+.cuadroContacto{
+  background: linear-gradient(to top, var(--gradiente));
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 900px;
+  height: 400px;
+  border-radius: 1rem;
+  justify-content: space-around;
+}
+
+.logCont{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 1rem;
+}
+
+.mapa{
+width: 300px;
+height: 345px; 
+border-radius: 10px;
+}
+
+.info-contacto{
+display: flex;
+flex-direction: column;
+gap: 15px;
+width: 50%;
+}
+
+.info-contacto h1{
+margin-top: 0px;
+font-size: 48px;
+font-family: 'Architects Daughter';
+font-weight: 800;
+color: var(--choscuro)
+}
+
+.info-contacto p{
+color: black;
+font-size: 20px;
+font-family: 'Architects Daughter';
+font-weight: bold;
+}
+
 
 .contacto{
   display: flex;
@@ -586,34 +588,15 @@
 }
 
 .contacto :hover{
-  /* width: 20%; */
   height: 20%;
   font-size: 30px;
 }
 
 .cuadroMapa{
-  font-family: 'Architects Daughter';
-  font-weight: bold;
   width: 300px;
-  background: linear-gradient(to bottom, var(--));
   padding: 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-/* .marca {
-  animation-name: moverCaja;
-  animation-duration: 2s;
-  /* animation-iteration-count: infinite; 
-  animation-iteration-count: 2;*/
-
-/* Alternate en la animacion */
-/* .marca { */
-  /* animation-name: moverCaja; */
-  /* animation-duration: 2s; */
-  /* animation-iteration-count: infinite; */
-  /* animation-iteration-count: 2; */
-  /* animation-direction: alternate; */
-/* } */
