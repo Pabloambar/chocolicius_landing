@@ -10,7 +10,7 @@ SALUDOS!
 ==========================================================================================
 
 E-4:
-SE AGREGA SECCION DE CONTACTOS CON MAPA, ANIMACIONES SUTILES, CARRITO DE COMPRAS
+SE AGREGA SECCION DE CONTACTOS CON MAPA, ANIMACIONES SUTILES, CARRITO DE COMPRAS Y MEDIA QUERIES
 
 
 ==========================================================================================
