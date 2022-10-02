@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Qwitcher+Grypen&family=Sacramento&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    list-style-type: none;
+}
+
 body{
     background-color: brown;
 }
-
+h1{
+    font-family: 'Architects Daughter';
+}
 .cajaFlex{
     width: 100%;
     display: flex;
