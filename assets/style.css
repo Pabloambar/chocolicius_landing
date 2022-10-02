@@ -120,7 +120,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        height: calc(100vh - 65px);
+        height: calc(70vh - 65px);
         overflow-y: scroll;
         z-index: 2;
         display: none;
@@ -248,7 +248,7 @@
       .btn-comprar2{
         display: none;
     }
-    
+
     .btn-comprar3{
       color: greenyellow;
       background-color: var(--choscuro);
