@@ -120,7 +120,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        height: calc(70vh - 65px);
+        height: calc(100vh - 65px);
         overflow-y: scroll;
         z-index: 2;
         display: none;
@@ -231,8 +231,9 @@
 
       .btn-comprar1{
           color: greenyellow;
+          font-family: 'Architects Daughter';
           background-color: var(--choscuro);
-          width: 120px;
+          width: 140px;
           padding: 8px 0px;
           border-radius: 10px;
           border: 2px solid brown;
@@ -241,8 +242,8 @@
       }
 
       .btn-comprar1:hover {
-        width: 130px;
-        height: 45px;
+        width: 150px;
+        height: 50px;
       }
 
       .btn-comprar2{
@@ -272,14 +273,7 @@
       max-width: 1200px;
       display: flex;
       justify-content: center;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: linear-gradient(to top, var(--gradiente));
-        width:900px;
-        height: 450px; 
-        border-radius: 1rem;
-        margin-top: 20px; */
+
     }
 
     .marca{
@@ -294,10 +288,10 @@
           transform: translateX(0);
       }
       50%{
-        transform: translate(-710px);
+        transform: translate(-610px);
       }
       100% {
-          transform: translateX(710px);
+          transform: translateX(610px);
       }
   }
 
@@ -309,7 +303,7 @@
         display: flex;
         justify-content: center;
         animation-name: moverCaja;
-        animation-duration: 1.3s;          
+        animation-duration: 1s;          
         animation-iteration-count: 2;
         animation-direction: alternate;
     }
@@ -332,9 +326,7 @@
       height: 450px; 
       border-radius: 1rem;
       margin-top: 20px;
-        /* max-width: 1200px;
-        display: flex;
-        justify-content: center; */
+
     }
 
     .info{

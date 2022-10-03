@@ -4,6 +4,7 @@
 :root{
     --gradiente: rgb(71, 50, 50), rgba(209, 151, 151, 0.781); 
     --chocoGrad: rgba(105, 16, 16, 0.473), rgba(209, 151, 151, 0.452); 
+    --headProductos: rgba(212, 179, 152, 0.678);
     --chocoLight:  rgb(168, 27, 27);
     --chocoIntermedio: rgb(119, 33, 17);
     --choscuro: rgb(49, 9, 9);
@@ -34,7 +35,9 @@
 
 body{
   /* background-image: url(/assets/imagenes/fondoChocolates2.jpg); */
-  background-color: var(--fire);
+  /* background-image: url(/assets/imagenes/fondoChorreandoHeader.png); */
+  /* background-color:chocolate; */
+  /* background-color:white; */
   background-size: cover;
   background-attachment: fixed; 
 }
@@ -47,7 +50,8 @@ main{
 }
 
 header{
-    background: linear-gradient(to top, var(--gradiente));
+    /* background: linear-gradient(to top, var(--gradiente)); */
+    background-color: rgba(245, 245, 245, 0.795);
     width: 100%;
     display:flex;
     justify-content: space-between;
@@ -62,7 +66,12 @@ header{
     top: 0;
 }
 
-.logo{
+
+.flechaBack{
+  display: none;
+}
+
+.logitoIzq{
     height: 100%;
 } 
 
@@ -78,11 +87,11 @@ header{
 }
 
 .navbar{
-    gap: 200px;
+    gap:150px;
 }
 
 .navbar-list{
-    gap: 150px;
+    gap: 200px;
 }
 
 .navbar-list a{
@@ -121,12 +130,12 @@ header{
     top: 65px; 
     right: 0;
     padding: 50px 30px;
-    background-color:rgba(104, 23, 3, 0.836);
+    background-color: rgba(128, 128, 128, 0.658);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: calc(70vh - 65px);
+    height: calc(100vh - 65px);
     overflow-y: scroll;
     z-index: 2;
     display: none;
@@ -138,7 +147,7 @@ header{
   }
   
   .carritoCont h2 {
-    color: var(--text-white);
+    color: black;
     font-size: 20px;
     font-weight: 600;
   }
@@ -149,7 +158,7 @@ header{
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    border: 1px solid var(--electric);
+    border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
   }
@@ -160,19 +169,19 @@ header{
   }
   
   .item-title {
-    color: var(--text-white);
+    color: black;
     font-weight: 600;
     font-size: 14px;
   }
   
   .item-bid {
-    color: var(--text-gray);
+    color: orangered;
     font-size: 12px;
     font-weight: 300;
   }
   
   .item-price {
-    background-color: #f3f4f6;
+    background-color: #06235c;
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
@@ -212,7 +221,7 @@ header{
   
   .divider {
     margin-top: 20px;
-    border: 0.5px solid var(--electric);
+    border: 1px solid black;
   }
   
   .cart-total {
@@ -222,12 +231,12 @@ header{
   }
   
   .cart-total p {
-    color: var(--electric);
-    font-weight: 700;
+    color: black;
+    font-weight: 900;
   }
   
   .cart-total span {
-    background-color: #f3f4f6 ;
+    background-color: #690a12 ;
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
@@ -246,21 +255,37 @@ header{
     text-align: center; 
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo{
+  color: var(--choscuro);
+  display: flex;
+  font-size: 60px;
+  font-family: 'Architects Daughter';
+  text-align: center;
+  text-shadow:2px 8px 8px darkred;
+}
+
 .AdCajas{
-    background-color: red;
+    /* background-color: rgba(182, 66, 66, 0.342); */
+    /* background-color: white; */
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     width: 85%;
     height: 100%;
-    border-radius: 1rem;
-    border: solid 1px whitesmoke;
+    border-radius: 15px;
+    /* border: solid 1px whitesmoke; */
     justify-content: center;
 
 }
 
 .cajas {
+  background-color: white;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -269,12 +294,12 @@ header{
     width: 75%;
     height: 75%;
     padding: 30px;
-    border: solid 1px gray;
-     
+    /* border-left: solid 1px var(--choscuro);
+    border-right: solid 1px var(--choscuro); */
 }
 
 .cajitas{
-    background:linear-gradient(var(--chocoGrad));
+    /* background:linear-gradient(var(--chocoGrad));
     font-family: 'Architects Daughter';
     font-size: 15px;
     font-weight: bold;
@@ -286,17 +311,29 @@ header{
     height: 200px;
     border-radius: 1rem;
     padding: 5px;
+    border-radius: 8px;
+box-shadow:  17px 17px 34px #5a5a5a,
+             -17px -17px 34px #ffffff; */
+             font-family: 'Architects Daughter';
+             font-size: 15px;
+             font-weight: bold;
+             display: flex;
+             flex-direction: column;;
+             align-items: center;;
+             justify-content: center;
+             width: 200px;
+             height: 200px;
 }
 
 .cajitas p {
-  color: white;
+  color: rgb(46, 19, 19);
 }
 
 .cajitas a {
-    color: white;
+    color: rgb(46, 19, 19);
   }
 
-.cajitas:hover{
+/* .cajitas:hover{
     background:linear-gradient(var(--chocoGrad));
     font-size: 20px;
     display: flex;
@@ -305,16 +342,29 @@ header{
     width: 230px;
     height: 230px;
     border-radius: 1rem;
-    /* cursor: pointer; */
+    /* cursor: pointer; 
     
-}
+} */
 
 .imgCuad {
     width: 150px;
     height: 150px;
     border-radius: 1rem;
+    border-radius: 8px;
+background: #e0e0e0;
+box-shadow:  15px 15px 30px #5a5a5a,
+             -15px -15px 30px #ffffff;
 }
 
+.imgCuad:hover {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+  border-radius: 8px;
+background: #e0e0e0;
+box-shadow:  15px 15px 30px #5a5a5a,
+           -15px -15px 30px #ffffff;
+}
 
       @media (max-width: 600px) {
 
@@ -330,10 +380,6 @@ header{
           align-items: center;
           height: 65px;
           padding: 0px 30px 0px 30px;
-          /* position: relative; */
-          /* position: fixed;
-          position: absolute;
-          position: static; */
           position: sticky;
           top: 0;
         }
@@ -358,6 +404,15 @@ header{
           gap: 25px;
           z-index: 2;
           display: none;
+        }
+
+        .titulo{
+          font-size: 35px;
+        }
+
+        .flechaBack{
+          display: flex;
+          height: 65%;
         }
       
         .navbar-list a {
@@ -385,8 +440,8 @@ header{
         }
       /* ====================================================================================================================== */
       
-          .logo{
-              height: 100%;
+          .logitoIzq{
+              display: none;
           } 
       
           .logoCarrito{
@@ -403,12 +458,12 @@ header{
               top: 65px; 
               right: 0;
               padding: 50px 30px;
-              background-color:rgba(104, 23, 3, 0.836);
+              background-color:rgba(128, 128, 128, 0.651);
               border-radius: 20px;
               display: flex;
               flex-direction: column;
               gap: 30px;
-              height: calc(70vh - 65px);
+              height: calc(100vh - 65px);
               overflow-y: scroll;
               z-index: 2;
               display: none;
@@ -420,7 +475,7 @@ header{
             }
             
             .carritoCont h2 {
-              color: var(--text-white);
+              color: black;
               font-size: 20px;
               font-weight: 600;
             }
@@ -431,7 +486,7 @@ header{
               justify-content: center;
               gap: 20px;
               padding: 20px;
-              border: 1px solid var(--electric);
+              border: 1px solid black;
               border-radius: 10px;
               cursor: pointer;
             }
@@ -442,19 +497,19 @@ header{
             }
             
             .item-title {
-              color: var(--text-white);
-              font-weight: 600;
+              color: black;
+              font-weight: 900;
               font-size: 14px;
             }
             
             .item-bid {
-              color: var(--text-gray);
+              color: orangered;
               font-size: 12px;
               font-weight: 300;
             }
             
             .item-price {
-              background-color: #f3f4f6;
+              background-color:#06235c;
               background-clip: text;
               color: transparent;
               -webkit-background-clip: text;
@@ -494,7 +549,7 @@ header{
             
             .divider {
               margin-top: 20px;
-              border: 0.5px solid var(--electric);
+              border: 1px solid black;
             }
             
             .cart-total {
@@ -504,12 +559,12 @@ header{
             }
             
             .cart-total p {
-              color: var(--electric);
-              font-weight: 700;
+              color: black;
+              font-weight: 900;
             }
             
             .cart-total span {
-              background-color: #f3f4f6 ;
+              background-color:  #690a12 ;
               background-clip: text;
               color: transparent;
               -webkit-background-clip: text;
@@ -528,4 +583,15 @@ header{
                 text-align: center; 
             }
 
+            .imgCuad:hover {
+              width: 250px;
+              height: 250px;
+              border-radius: 1rem;
+              border-radius: 8px;
+            background: #e0e0e0;
+            box-shadow:  15px 15px 30px #5a5a5a,
+                       -15px -15px 30px #ffffff;
+            }
+
+            
         }
